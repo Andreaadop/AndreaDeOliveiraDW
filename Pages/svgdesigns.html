@@ -6,64 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/andisvg.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../img/andisvg.svg" type="image/x-icon">
     <title>AndiSVG Shop</title>
+    <link rel="stylesheet" href="../CSS/main.css">
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../img/andisvg.png" alt="andisvg" class="nav-logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="clothing.html">Clothing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="svgdesigns.html">SVG Files</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactus.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faqs.html">FAQs</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg botonera sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/andisvg.png" alt="AndiSVG logo" class="nav-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!---here el button hamburguesa-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../Pages/clothing.html">Clothing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Pages/svgdesigns.html">SVG Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Pages/aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Pages/faqs.html">FAQs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="page-header">
+      <img src="../img/print-pattern.png" alt="AndiSVG" style="width:100%">
+    </div>
+  
+    <h1 class="all-caps">
+      Trendy SVG designs
+    </h1>
+
+  </header>
+
+  <div class="search-bar">
+    <h3>Cool SVG hunt</h3>
+    <form action="">
+      <input type="text" placeholder="Search products">
+      <button type="submit">Search<i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+  <main>
+
+  <section class="products-display">
+
+   
+    <div class="flex-container products-display">
+      <div class="flex-container product-item">
+        <img src="../img/svgproduct1.png" alt="Moscow Mule Lyrics SVG">
+        <h3>Moscow Mule Lyrics</h3>
+        <p>Digital SVG design with the lyrics from Moscow Mule</p>
+        <p>$19.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="flex-container product-item">
+        <img src="../img/svgproduct2.png" alt="Bad Bunny SVG">
+        <h3>Bad Bunny Halftone</h3>
+        <p>Bad Bunny digital SVG design</p>
+        <p>$24.99</p>
+        <button>Add to Cart</button>
+      </div>
+
+    </section>
+
+	</main>
 
 
-        <footer>
-            <p class="text-white">
-                Follow us on Social Media!
-            </p>
-
-        <div class="social-media">
+    <section class="bg-chooseyourplayer categories-section">
+      <div class="player">
+       <a href="#">
+          <img src="../img/bad-bunny.png" alt="Click here if you love Benito" class="img-fluid">
+       </a>
+      </div>
     
-            <a href="#" target="_blank">
-                <img class="" src="../img/IG.svg" alt="Follow us on Instagram!">
-            </a>
+      <div class="player">
+       <a href="#">
+              <img src="../img/harry-styles.png" alt="This man is my baby daddy" class="img-fluid">
+       </a>
+      </div>
+    
+      <div class="player">
+       <a href="#">
+              <img src="../img/taylor-swift.png" alt="This man is my baby daddy" class="img-fluid">
+       </a>
+      </div>
+    
+      <div class="player">
+       <a href="#">
+              <img src="../img/Random.png" alt="This man is my baby daddy" class="img-fluid">
+       </a>
+      </div>
+    </section>
 
-            <a href="#" target="_blank">
-                <img src="../img/TikTok.svg" alt="Follow us on TikTok!">
-            </a>
-        </div>
+    <section class="center subscribe-section">
 
-        <div class="footer_logo">
-            <img src="../img/andiisvg-white.png" alt="Your Logo">
-          </div>
+      <div>
+        <img src="../img/subscribe-banner.png" alt="subscribe" class="center img-fluid">
+      </div>
+      </section>
+      
 
-        </footer>
-
-</body>
-</html>
+      <footer>

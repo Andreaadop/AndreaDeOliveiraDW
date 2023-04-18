@@ -1,0 +1,90 @@
+//---COLORS
+$color-hardpink: #ef93df;
+$color-lightpink: #f9dafe;
+$color-black: black;
+$color-white: white;
+$color-yellow: #fef371;
+$color-lightblue: #d0f4ea;
+$color-blue: #bcc4ff;
+
+
+//--Boxes
+
+//--FONTS
+$main-font: 'Urban Space', sans-serif;
+$body-font: 'Poppins', sans-serif;
+$h1-size: 4em;
+$h2-size: 3em;
+$h3-size: 2em;
+$body-size: 1em;
+$big-text: 7rem;
+
+
+//TEXT-COLOR-VARS
+.text-pink{
+    color: $color-hardpink;
+}
+
+.text-lightpink{
+    color: $color-lightpink;
+}
+
+.text-blue{
+    color: $color-blue;
+}
+
+.text-white{
+    color: $color-white;
+}
+
+.accent-text{
+    font-family: $main-font;
+    font-size: $h1-size;
+    line-height: 4.3;
+}
+
+//TEXT-ALIGNMENTS
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-justified{
+    text-align: justify;
+}
+
+.all-caps{
+    text-transform: uppercase
+}
+
+
+//--BG-IMAGES & COLORS
+$background-grid: url('../img/grid.svg');
+$pink-wave: url('../img/1280-pinkwavebg.png');
+$chooseyourplayer-bg: url('../img/1280-chooseyourplayerbg.png');
+
+.bg-pattern{
+    background-image: $background-grid;
+    background-size: 7%;
+    background-repeat: repeat;
+    width: 100%;
+}
+
+.pink-wave{
+    background-image: $pink-wave;
+    background-size: cover;
+    background-position: center;
+    
+    }
+
+.aboutuslogo{
+        size: 20%;
+    }
+

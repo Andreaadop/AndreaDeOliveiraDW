@@ -1,0 +1,71 @@
+//--TEXT
+h1 {
+    color: $color-black;
+    font-family: $main-font;
+    font-size: $h1-size;
+    font-weight: 400;
+    line-height: 4.3;
+}
+
+h2 {
+    color: $color-black;
+    font-family: $body-font;
+    font-size: $h2-size;
+    font-weight: 600;
+    line-height: 3.3em;
+  }
+
+  h3 {
+    color: $color-black;
+    font-family: $body-font;
+    font-size: $h3-size;
+    font-weight: 600;
+    line-height: 2.3em;
+  }  
+
+  p {
+    color: $color-black;
+    font-family: $body-font;
+    font-size: $body-size;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+
+//--SEARCH BAR
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  h3 {
+    margin-right: 20px;
+  }
+  form {
+    display: flex;
+    input {
+      font-family: $body-font;
+      background-color: #f2f2f2;
+      color: $color-black;
+      border: none;
+      padding: 10px;
+      border-radius: 5px 0 0 5px;
+      font-size: 16px;
+      flex: 1;
+      &::placeholder {
+        color: #999;
+      }
+    }
+    button {
+      font-family: $body-font;
+      background-color: $color-hardpink;
+      color: #fff;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      padding: 10px;
+      cursor: pointer;
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -130,7 +130,7 @@ footer{
 }
 
 
-.accent-blue-text{
+.blue-accent-text{
     color: #bcc4ff;
     font-family: 'Urban Space', sans-serif;
     font-size: 10em;
@@ -224,7 +224,7 @@ background-position: center;
 }
 
 .categories-section{
-    background-image: url(../img/1280-chooseyourplayerBG.png);
+    background-image: url(../img/1280-chooseyourplayerbg.png);
     background-size: 100%;
     background-repeat: no-repeat;
     padding-top: 3%;
