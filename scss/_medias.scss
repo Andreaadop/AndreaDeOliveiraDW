@@ -1,5 +1,5 @@
 .container{
-    .btn{
+    .btn-main{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -18,18 +18,55 @@
           }
     }
 
-    //--SubscribeSection
-    .subscribe-section{
+    .btn{
+        background-color: $color-white;
+        color: $color-black;
+        font-family: $body-font;
+    }
 
-            img{
-                padding-top: 6%;
-            max-width: 100%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            position: relative;
-            }
+.btn-regular{
+    background-color: $color-white;
+    color: $color-black;
+    font-size: 16px;
+    padding: 10px;
+    border-style: outset;
+    border-color: black;
+    border-radius: 30px;
+    text-align: center;
+    width: 8em;
+}
+    //--SubscribeSection
+    .home-newsletter {
+        padding: 80px 0;
+        }
+        
+        .home-newsletter .single {
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 2; }
+        .home-newsletter .single h2 {
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-bottom: 40px; }
+        .home-newsletter .single .form-control {
+        height: 50px;
+        border-color: transparent;
+        border-radius: 20px 0 0 20px; }
+        .home-newsletter .single .form-control:focus {
+        box-shadow: none;
+}
+        .home-newsletter .single .btn {
+        min-height: 50px; 
+        border-radius: 0 20px 20px 0;
+        }
+
+    .regular-margin{
+        margin-block: 4%;
+    }
+
+    .regular-padding{
+        padding-block: 4%;
     }
 

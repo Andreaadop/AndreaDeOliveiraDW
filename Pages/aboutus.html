@@ -5,65 +5,184 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="shortcut icon" href="img/andisvg.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="../img/andisvg.svg" type="image/x-icon">
     <title>AndiSVG Shop</title>
+    <link rel="stylesheet" href="../CSS/main.css">
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../img/andisvg.png" alt="andisvg" class="nav-logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="clothing.html">Clothing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="svgdesigns.html">SVG Files</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactus.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faqs.html">FAQs</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
+  <nav class="navbar navbar-expand-md bg-white navbar-light">
+    <!-- Brand -->
+    <a class="navbar-brand" href="../index.html">
 
-      <footer>
-        <p class="text-white">
-            Follow us on Social Media!
-        </p>
+      <img src="../img/andisvg.png" alt="AndiSVG logo">
+    </a>
 
-    <div class="social-media">
+    <!-- Toggler/collapsible Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <a href="#" target="_blank">
-            <img class="" src="../img/IG.svg" alt="Follow us on Instagram!">
-        </a>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse nav-text" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../Pages/clothing.html">Clothing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Pages/svgdesigns.html">SVG Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Pages/aboutus.html">About Us</a>
+        </li>
+        <a class="nav-link" href="../Pages/contactus.html">Contact Us</a>
+      </li>
 
-        <a href="#" target="_blank">
-            <img src="../img/TikTok.svg" alt="Follow us on TikTok!">
-        </a>
+      </ul>
     </div>
+  </nav>
 
-    <div class="footer_logo">
-        <img src="../img/andiisvg-white.png" alt="Your Logo">
+      <!-- Header -->
+
+  <header>
+    <div class="page-header">
+      <img src="../img/model-pattern.png" alt="AndiSVG" style="width:100%">
+    </div>
+  
+    <h1 class="all-caps">
+      About us
+    </h1>
+
+  </header>
+
+        <!-- Website Description-->
+
+  <div class="container regular-margin">
+    <div class="row">
+        <div class="col-12">
+            <p class="text-center">
+              Welcome to AndiSVG, the ultimate destination for all you fashion-forward Gen Z trendsetters! We're here to fuel your passion for style with our exclusive collection of cutting-edge clothing featuring prints of your favorite icons like Bad Bunny, Taylor Swift, and so many more.
+
+              At AndiSVG, we embrace the vibrant spirit of youth, creating a shopping experience that is nothing short of fun, fresh, and edgy.
+            </p>
+              
+              <p class="text-center">Our curated selection of eye-catching apparel will have you turning heads and making a statement wherever you go.
+              
+                We're all about celebrating individuality and empowering you to express your unique style through our one-of-a-kind designs.</p>
+              
+              <p class="text-center">So, get ready to break the mold, stand out from the crowd, and make an impact with TrendCraze's jaw-dropping tees, hoodies, and accessories that are just as bold and rebellious as you are.
+              
+              Ready to level up your wardrobe game? Dive into the world of TrendCraze and join the revolution of Gen Z fashionistas who are redefining the style scene, one iconic print at a time.
+            </p>
+
+        </div>
+    </div>
+  </div>
+
+
+        <!-- BS-Carrousel -->
+  <style>
+    .carousel-item {
+      display: flex !important;
+    }
+    .img-placeholder {
+      width: 100%;
+      height: 250px;
+    }
+  </style>
+  
+  <div id="carouselExampleControls" class="carousel slide carousel-pics" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active bg-white">
+            <div class="img-placeholder"></div>
+            <div class="img-placeholder"></div>
+            <div class="img-placeholder"></div>
+            <div class="img-placeholder"></div>
+        </div>
+        <div class="carousel-item">
+            <div class="img-placeholder">
+              <img src="../img/sample-1.png" alt="">
+            </div>
+            <div class="img-placeholder">
+              <img src="../img/sample-2.png" alt="">
+            </div>
+            <div class="img-placeholder">
+              <img src="../img/sample-3.png" alt="">
+            </div>
+            <div class="img-placeholder">
+              <img src="../img/sample-4.png" alt="">
+            </div>
+            <div class="img-placeholder">
+              <img src="../img/sample-1.png" alt="">
+            </div>
+            <div class="img-placeholder">
+              <img src="../img/sample-2.png" alt="">
+        </div>
+        <div class="img-placeholder">
+          <img src="../img/sample-3.png" alt="">
+        </div>
+        <div class="img-placeholder">
+          <img src="../img/sample-4.png" alt="">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+</div>
+
+      <!-- Newsletter Subscription -->
+
+<section class="home-newsletter bg-pink regular-margin regular-padding">
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-12">
+    <div class="single">
+      <h2>Subscribe to our Newsletter</h2>
+    <div class="input-group">
+           <input type="email" class="form-control" placeholder="Enter your email">
+           <span class="input-group-btn">
+           <button class="btn btn-theme" type="submit">Subscribe</button>
+           </span>
+            </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </section>
+
+        <!-- Footer -->
+
+<footer class="bg-black py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-white">
+        <p class="text-white">AndiSVG - Pop culture clothing and SVG designs</p>
       </div>
+      <div class="col-md-6">
+        <ul class="list-inline text-md-right mb-0">
+          <li class="list-inline-item"><a class="text-white nav-text" href="#">Privacy Policy</a></li>
+          <li class="list-inline-item"><a class="text-white nav-text">Terms of Use</a></li>
+          <li class="list-inline-item"><a class="text-white nav-text">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 
-    </footer>
 
+      <!-- Link to BS -->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

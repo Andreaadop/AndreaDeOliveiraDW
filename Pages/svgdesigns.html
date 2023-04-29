@@ -5,43 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="../img/andisvg.svg" type="image/x-icon">
     <title>AndiSVG Shop</title>
     <link rel="stylesheet" href="../CSS/main.css">
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg botonera sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../img/andisvg.png" alt="AndiSVG logo" class="nav-logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
-        <!---here el button hamburguesa-->
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="../Pages/clothing.html">Clothing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Pages/svgdesigns.html">SVG Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Pages/aboutus.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Pages/faqs.html">FAQs</a>
-          </li>
-        </ul>
-      </div>
+  <nav class="navbar navbar-expand-md bg-white navbar-light">
+    <!-- Brand -->
+    <a class="navbar-brand" href="../index.html">
+
+      <img src="../img/andisvg.png" alt="AndiSVG logo">
+    </a>
+
+    <!-- Toggler/collapsible Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse nav-text" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../Pages/clothing.html">Clothing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Pages/svgdesigns.html">SVG Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Pages/aboutus.html">About Us</a>
+        </li>
+        <a class="nav-link" href="../Pages/contactus.html">Contact Us</a>
+      </li>
+      </ul>
     </div>
   </nav>
 
+      <!-- Header -->
   <header>
     <div class="page-header">
       <img src="../img/print-pattern.png" alt="AndiSVG" style="width:100%">
@@ -53,6 +59,7 @@
 
   </header>
 
+    <!-- Search Bar -->
   <div class="search-bar">
     <h3>Cool SVG hunt</h3>
     <form action="">
@@ -60,6 +67,8 @@
       <button type="submit">Search<i class="fa fa-search"></i></button>
     </form>
   </div>
+
+    <!-- Products -->
 
   <main>
 
@@ -87,6 +96,7 @@
 
 	</main>
 
+    <!-- Product Categories -->
 
     <section class="bg-chooseyourplayer categories-section">
       <div class="player">
@@ -114,12 +124,47 @@
       </div>
     </section>
 
+    <!-- Newsletter subscription -->
+
     <section class="center subscribe-section">
 
-      <div>
-        <img src="../img/subscribe-banner.png" alt="subscribe" class="center img-fluid">
-      </div>
-      </section>
+      <section class="home-newsletter bg-pink regular-margin regular-padding">
+        <div class="container">
+        <div class="row">
+        <div class="col-sm-12">
+          <div class="single">
+            <h2>Subscribe to our Newsletter</h2>
+          <div class="input-group">
+                 <input type="email" class="form-control" placeholder="Enter your email">
+                 <span class="input-group-btn">
+                 <button class="btn btn-theme" type="submit">Subscribe</button>
+                 </span>
+                  </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        </section>
       
+            <!-- Footer -->
 
-      <footer>
+      <footer class="bg-black py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-white">
+              <p class="text-white">AndiSVG - Pop culture clothing and SVG designs</p>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-inline text-md-right mb-0">
+                <li class="list-inline-item"><a class="text-white nav-text" href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a class="text-white nav-text">Terms of Use</a></li>
+                <li class="list-inline-item"><a class="text-white nav-text">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+ 
+      <!-- Link de BS -->
+<script src="js/bootstrap.min.js"></script>
+</body> 

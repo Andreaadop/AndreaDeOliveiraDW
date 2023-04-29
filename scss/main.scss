@@ -1,12 +1,12 @@
 //Imports
-@import '_vars';
-@import '_common';
-@import '_nav';
-@import '_products';
-@import '_header';
-@import '_footer';
-@import '_medias';
-@import '_mixins';
+@import 'vars';
+@import 'mixins';
+@import 'common';
+@import 'nav';
+@import 'products';
+@import 'header';
+@import 'footer';
+@import 'medias';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap');
 
 @font-face {
@@ -20,6 +20,7 @@
     justify-content: center;
     
 }
+
 
   //--HOMEPAGE SECTIONS
 
@@ -134,96 +135,53 @@
     }
     
 
-        /* Media for smaller screens */
-@media only screen and (max-width: 800px) {
-    .whoarewe-section {
-        display: flex;
-        flex-direction: column;
+    .nav-text{
+        font-family: $body-font;
+        
     }
 
-    .unisex-clothing{
-        display: flex;
-        flex-direction: column;
+
+    //--CONTACT-US PAGE
+    .carousel-pics{
+        margin-block: 4%;
     }
 
-    .wrw-text{
-    padding-block: 5%;
-    }
-
-    .models{
-        padding: 15%;
-        size: 50%;
-    }
-
-    .svg-section{
-        display: flex;
-        flex-direction: column;
-        padding: 0%;
-        margin: 0%;
-        max-height: 70rem;
-
-        p{
-            font-family: $main-font;
-            font-size: $h1-size;
-            text-transform: uppercase;
-        }
-
-        img{
-            margin: 0 auto;
+    //--MIXINS
+    @media only screen and (max-width: 800px) {
+        .whoarewe-section {
             display: flex;
-            justify-content: center;
-            align-items: center;
-           height: 25rem;
-        }
-    }
-
-    .products-display{
-        display: flex;
-        flex-direction: column;
-
-        h2{
-            display:flex ;
             flex-direction: column;
-            justify-content: center;
-            text-align: center;
         }
-
-        .product-item{
-            background-color: white;
-            margin-inline: 10%;
-            margin-block: 10%;
-
-
-
-            img{
-                max-height: 400px;
-                border-radius: 10px;
-            }
-
-            button{
-                background-color: $color-hardpink;
-                border-radius: 40px;
-                border-color: $color-black;
-                padding: 4%;
-            }
-
-        }
-
-    }
     
+        .unisex-clothing{
+            display: flex;
+            flex-direction: column;
 
-    }
+        }
 
-    @media only screen and (max-width: 1200px) and (min-width: 800px) {
-
+        .accent-text{
+            font-size: 3rem;
+        }
+    
+        .wrw-text{
+        padding-block: 5%;
+        }
+    
+        .models{
+            padding: 10%;
+            size: 50%;
+        }
+    
         .svg-section{
+            display: flex;
+            flex-direction: column;
             padding: 0%;
             margin: 0%;
             max-height: 70rem;
     
             p{
                 font-family: $main-font;
-                font-size: 5rem;
+                font-size: $h1-size;
                 text-transform: uppercase;
             }
     
@@ -235,20 +193,27 @@
                height: 25rem;
             }
         }
-
+    
         .products-display{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
     
-
+            h2{
+                display:flex ;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+            }
+    
             .product-item{
                 background-color: white;
                 margin-inline: 10%;
                 margin-block: 10%;
-
+    
+    
     
                 img{
-                    max-height: 300px;
+                    max-height: 400px;
                     border-radius: 10px;
                 }
     
@@ -262,4 +227,57 @@
             }
     
         }
+        
+    
         }
+    
+        @media only screen and (max-width: 1200px) and (min-width: 800px) {
+    
+            .svg-section{
+                padding: 0%;
+                margin: 0%;
+                max-height: 70rem;
+        
+                p{
+                    font-family: $main-font;
+                    font-size: 5rem;
+                    text-transform: uppercase;
+                }
+        
+                img{
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                   height: 25rem;
+                }
+            }
+    
+            .products-display{
+                display: flex;
+                flex-direction: row;
+        
+    
+                .product-item{
+                    background-color: white;
+                    margin-inline: 10%;
+                    margin-block: 10%;
+    
+        
+                    img{
+                        max-height: 300px;
+                        border-radius: 10px;
+                    }
+        
+                    button{
+                        background-color: $color-hardpink;
+                        border-radius: 40px;
+                        border-color: $color-black;
+                        padding: 4%;
+                
+                    }
+        
+                }
+        
+            }
+            }

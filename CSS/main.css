@@ -58,6 +58,117 @@
   size: 20%;
 }
 
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-pink {
+  background-color: #ef93df;
+}
+
+@media only screen and (max-width: 800px) {
+  .whoarewe-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .unisex-clothing {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrw-text {
+    padding-block: 5%;
+  }
+  .models {
+    padding: 15%;
+    size: 50%;
+  }
+  .svg-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+    max-height: 70rem;
+  }
+  .svg-section p {
+    font-family: "Urban Space", sans-serif;
+    font-size: 4em;
+    text-transform: uppercase;
+  }
+  .svg-section img {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+  }
+  .products-display {
+    display: flex;
+    flex-direction: column;
+  }
+  .products-display h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .products-display .product-item {
+    background-color: white;
+    margin-inline: 10%;
+    margin-block: 10%;
+  }
+  .products-display .product-item img {
+    max-height: 400px;
+    border-radius: 10px;
+  }
+  .products-display .product-item button {
+    background-color: #ef93df;
+    border-radius: 40px;
+    border-color: black;
+    padding: 4%;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  .svg-section {
+    padding: 0%;
+    margin: 0%;
+    max-height: 70rem;
+  }
+  .svg-section p {
+    font-family: "Urban Space", sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+  }
+  .svg-section img {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+  }
+  .products-display {
+    display: flex;
+    flex-direction: row;
+  }
+  .products-display .product-item {
+    background-color: white;
+    margin-inline: 10%;
+    margin-block: 10%;
+  }
+  .products-display .product-item img {
+    max-height: 300px;
+    border-radius: 10px;
+  }
+  .products-display .product-item button {
+    background-color: #ef93df;
+    border-radius: 40px;
+    border-color: black;
+    padding: 4%;
+  }
+}
 h1 {
   color: black;
   font-family: "Urban Space", sans-serif;
@@ -171,7 +282,7 @@ header h1, .page-header h1 {
   margin: 1%;
 }
 
-.container .btn {
+.container .btn-main {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -189,15 +300,63 @@ header h1, .page-header h1 {
   width: 12em;
 }
 
-.subscribe-section img {
-  padding-top: 6%;
-  max-width: 100%;
+.btn {
+  background-color: white;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-regular {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  border-style: outset;
+  border-color: black;
+  border-radius: 30px;
+  text-align: center;
+  width: 8em;
+}
+
+.home-newsletter {
+  padding: 80px 0;
+}
+
+.home-newsletter .single {
+  max-width: 650px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  text-align: center;
   position: relative;
+  z-index: 2;
+}
+
+.home-newsletter .single h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.home-newsletter .single .form-control {
+  height: 50px;
+  border-color: transparent;
+  border-radius: 20px 0 0 20px;
+}
+
+.home-newsletter .single .form-control:focus {
+  box-shadow: none;
+}
+
+.home-newsletter .single .btn {
+  min-height: 50px;
+  border-radius: 0 20px 20px 0;
+}
+
+.regular-margin {
+  margin-block: 4%;
+}
+
+.regular-padding {
+  padding-block: 4%;
 }
 
 @font-face {
@@ -303,7 +462,14 @@ header h1, .page-header h1 {
   padding: 4%;
 }
 
-/* Media for smaller screens */
+.nav-text {
+  font-family: "Poppins", sans-serif;
+}
+
+.carousel-pics {
+  margin-block: 4%;
+}
+
 @media only screen and (max-width: 800px) {
   .whoarewe-section {
     display: flex;
@@ -313,11 +479,14 @@ header h1, .page-header h1 {
     display: flex;
     flex-direction: column;
   }
+  .accent-text {
+    font-size: 3rem;
+  }
   .wrw-text {
     padding-block: 5%;
   }
   .models {
-    padding: 15%;
+    padding: 10%;
     size: 50%;
   }
   .svg-section {
